@@ -107,10 +107,15 @@ html {
 }
 
 @media (max-width: 700px) {
+  body,
+  html {
+    flex-direction: column;
+    justify-content: start;
+  }
   .card-container {
     flex-direction: column;
     max-width: var(--mobile-width);
-    padding: 3rem 1rem;
+    padding: 6rem 2rem;
   }
   .card-title {
     font-size: 2rem;
